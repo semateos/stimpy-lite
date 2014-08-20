@@ -23,7 +23,7 @@ $ npm install -g supervisor
 
 To use it run:
 ```
-$ npm start
+$ supervisor -e html,js  server
 ```
 
 ## Plugins
