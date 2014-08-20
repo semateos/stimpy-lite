@@ -23,18 +23,8 @@ $ npm install -g supervisor
 
 To use it run:
 ```
-$ supervisor -e html,js  server
+$ npm start
 ```
-
-####Production
-Before going into production you will want to concatenate and minify your assets. We will use Gulp for this.
-
-To install run:
-```
-npm install -g gulp
-```
-
-Now you can run `gulp` from the command line and it will run the tasks in the `gulpfile.js`. The current tasks will minify and optimize your CSS, JS, and Images. If you want more tasks you can go to the Gulp Plugin page. [http://gratimax.github.io/search-gulp-plugins/](http://gratimax.github.io/search-gulp-plugins/)
 
 ## Plugins
 The Hapi plugins that are being used.
