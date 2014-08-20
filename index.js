@@ -6,17 +6,13 @@ var Hapi = require('hapi');
 // Server Config
 var config = require('./server/config');
 
-// Hapi Server Plugins
-var plugins = require('./server/config/plugins');
-
 exports.register = function(plugin, options, next) {
 
-	plugin.register(plugins, function(err) {
+	plugin.register(config.plugins, function(err) {
         if (err) throw err;
     });
 
-	plugin.route(require('./server/routes/base'));
-    plugin.route(require('./server/routes/static'));
+	plugin.route(require('./server/routes'));
 
 	plugin.views(config.hapi.options.views);
 	
