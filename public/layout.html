@@ -1,23 +1,23 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>{% block title %}{{title}}{% endblock %}</title>
+  <meta charset="UTF-8">
+  <title>{% block title %}{{title}}{% endblock %}</title>
 
-    {% block head %}
-	    {% for item in assets.css %}
-	        <link rel="stylesheet" href="{{item}}{{version.cache}}"/>
-	    {% endfor %}
+  {% block head %}
+    {% for item in assets.css %}
+        <link rel="stylesheet" href="{{item}}{{version.cache}}"/>
+    {% endfor %}
 	{% endblock %}
 </head>
 <body>
-    {% block content %}
-		<h1>{{title}}</h1>
+  {% block content %}
+  	<h1>{{title}}</h1>
     {% endblock %}
     {% block foot %}
-	    {% for item in assets.js %}
-	        <script src="{{item}}{{version.cache}}"></script>
-	    {% endfor %}
+      {% for item in assets.js %}
+          <script src="{{item}}{{version.cache}}"></script>
+      {% endfor %}
 	{% endblock %}
 </body>
 </html>

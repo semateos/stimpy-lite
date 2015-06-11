@@ -14,17 +14,22 @@ Start the server by running the command:
 $ npm start
 ```
 
-Or, use Supervisor to watch for file changes and restart the server [https://github.com/isaacs/node-supervisor](https://github.com/isaacs/node-supervisor).
+## The Stack:
+**Node.js** - Because it's fun, npm rules, and JS is hipster.
+[http://nodejs.org/](http://nodejs.org/)
 
-To install run:
-```
-$ npm install -g supervisor
-```
+**Hapi** - A very well designed server framework that is easy to understand, easy to create your own plugins, scales very well, cache options built in, and more.
+[http://hapijs.com/](http://hapijs.com/)
 
-To use it run:
-```
-$ supervisor -e html,js  server
-```
+**Swig** - It looks like HTML, it's very fast, great for template inheritance, and allows you to use HTML syntax with the server and with front-end client Javascript includes.
+[http://paularmstrong.github.io/swig/](http://paularmstrong.github.io/swig/docs/#browser)
+
+**Bower** - Package management for the front end.  Bower uses a flat dependency tree, requiring only one version for each package, reducing page load to a minimum. [http://bower.io/](http://bower.io/)  The main files of bower packages are automagically included in `server/config/assets.js` and in `server/views/includes/foot.html`.
+
+**CSS Framework** - None. Choose your own CSS preprocessor and CSS framework.
+
+**Gulp** - A task runner for your assets, and can do a lot more. The performance is amazing and it is easy to get started. [http://gulpjs.com/](http://gulpjs.com/)
+
 
 ## Plugins
 The Hapi plugins that are being used.

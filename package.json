@@ -13,7 +13,7 @@
     "node": "0.10.x"
   },
   "scripts": {
-    "start": "supervisor -e html,js server.js",
+    "start": "node server",
     "postinstall": "bower install"
   },
   "dependencies": {
